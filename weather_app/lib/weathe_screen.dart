@@ -117,7 +117,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           child: Column(
                             children: [
                               Text(
-                                '$currentTemp K',
+                                '$currentTemp °K',
                                 style: const TextStyle(
                                   fontSize: 32,
                                   fontWeight: FontWeight.bold,
@@ -167,7 +167,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       final time = DateTime.parse(hourlyForecast['dt_txt']);
                       return Hourlyforecastitem(
                         time: DateFormat.j().format(time),
-                        value: hourlyTemp,
+                        value: '$hourlyTemp °k',
                         icon: hourlySky == 'Clouds' || hourlySky == 'Rain'
                             ? Icons.cloud
                             : Icons.sunny,
