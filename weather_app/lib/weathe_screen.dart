@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'hourly_forecast.dart';
+import 'additional_forecast.dart';
 
 class WeatherScreen extends StatelessWidget {
   const WeatherScreen({super.key});
@@ -87,16 +89,16 @@ class WeatherScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const Placeholder(
-              fallbackHeight: 250,
-            ),
 
             const SizedBox(
               height: 20,
             ),
-            const Placeholder(
-              fallbackHeight: 150,
+            const Text(
+              'Additional Information',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
+            const SizedBox(height: 12),
+            const AdditionalForecast(),
           ],
         ),
       ),
@@ -104,44 +106,4 @@ class WeatherScreen extends StatelessWidget {
   }
 }
 
-class Hourlyforecastitem extends StatelessWidget {
-  const Hourlyforecastitem({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 6,
-      child: Container(
-        width: 100,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: const Padding(
-          padding: EdgeInsets.all(8),
-          child: Column(
-            children: [
-              Text(
-                '3:00',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                height: 8,
-              ),
-              Icon(
-                Icons.cloud,
-                size: 32,
-              ),
-              SizedBox(
-                height: 8,
-              ),
-              Text(
-                '320.12',
-                style: TextStyle(),
-              )
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
