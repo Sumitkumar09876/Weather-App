@@ -20,10 +20,8 @@ A simple weather app built with Dart using the Flutter framework to display real
 
 ## Screenshots
 
-![Screenshot 1](![Screenshot 2024-03-13 123345](https://github.com/Sumitkumar09876/Weather_App/assets/130588035/f6b36e12-5d7c-43cd-a3df-5e121d90d5a4)
-)
-Weather App Home Page
-
+![Screenshot 1](https://github.com/Sumitkumar09876/Weather_App/assets/130588035/f6b36e12-5d7c-43cd-a3df-5e121d90d5a4)
+*Weather App Home Page*
 
 ## Installation
 
